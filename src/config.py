@@ -28,9 +28,9 @@ class Settings(BaseSettings):
     AMO_CRM_ENABLED: bool = Field(default=False, description="Enable amoCRM integration")
     AMO_CRM_SUBDOMAIN: str = Field(default="", description="amoCRM subdomain")
     AMO_CRM_ACCESS_TOKEN: str = Field(default="", description="amoCRM access token (OAuth/Long-lived)")
-    AMO_CRM_FIELD_VISIT_TIME_ID: int = Field(default=1033687, description="amoCRM custom field ID for visit time")
-    AMO_CRM_FIELD_SERVICE_ID: int = Field(default=1033689, description="amoCRM custom field ID for service")
-    AMO_CRM_STATUS_CONFIRMED_ID: int = Field(default=89932350, description="amoCRM status ID for confirmed lead")
+    AMO_CRM_FIELD_VISIT_TIME_ID: int = Field(default=101, description="amoCRM custom field ID for visit time")
+    AMO_CRM_FIELD_SERVICE_ID: int = Field(default=102, description="amoCRM custom field ID for service")
+    AMO_CRM_STATUS_CONFIRMED_ID: int = Field(default=103, description="amoCRM status ID for confirmed lead")
 
     model_config = SettingsConfigDict(
         env_file=".env",
